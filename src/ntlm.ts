@@ -1,7 +1,7 @@
 import { encode } from 'iconv-lite';
 import { createCipheriv } from 'crypto';
+import { hex as md4 } from 'js-md4';
 
-const md4 = require('js-md4');
 const TO_ENCODE = 'KGS!@#$%';
 
 function passwordToKey (password: Uint8Array, key: Uint8Array) {
@@ -16,7 +16,7 @@ function passwordToKey (password: Uint8Array, key: Uint8Array) {
 }
 
 export function calculatePassNT (password: string) {
-	return md4.hex(encode(password, 'utf-16le')).toUpperCase();
+	return md4(encode(password, 'utf-16le')).toUpperCase();
 }
 
 export function calculatePassLM (password: string) {
