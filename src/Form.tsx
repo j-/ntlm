@@ -25,8 +25,9 @@ export default class Form extends React.Component<Props, State> {
 		return (
 			<form className="Form" onSubmit={this.handleSubmit}>
 				<div>
-					<label>Password</label><br />
+					<label htmlFor="Form-password">Password</label><br />
 					<input
+						id="Form-password"
 						type="password"
 						value={password}
 						onChange={this.handleChangePassword}
