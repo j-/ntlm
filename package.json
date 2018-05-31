@@ -21,5 +21,24 @@
     "@types/react": "^16.3.14",
     "@types/react-dom": "^16.0.5",
     "typescript": "^2.8.3"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j-/ntlm.git"
+  },
+  "keywords": [
+    "ntlm",
+    "nt",
+    "lm",
+    "passnt",
+    "passlm"
+  ],
+  "author": "Jamie Hoeks <j@skeoh.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/j-/ntlm/issues"
+  },
+  "homepage": "https://skeoh.com/ntlm"
 }
