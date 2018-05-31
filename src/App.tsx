@@ -4,7 +4,9 @@ import './App.css';
 
 const App: React.StatelessComponent = () => (
 	<div className="App">
-		<Form />
+		<div className="App-form-container">
+			<Form />
+		</div>
 	</div>
 );
 

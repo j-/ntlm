@@ -1,3 +1,11 @@
+.Output {
+	background-color: hsl(200, 10%, 90%);
+	border: 1px solid hsl(200, 20%, 80%);
+	border-radius: 0.125em;
+	padding: 0.5em;
+	cursor: text;
+}
+
 .Output pre {
 	margin: 0;
 }

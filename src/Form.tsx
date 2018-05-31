@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { calculatePassNT, calculatePassLM } from './ntlm';
 import Output from './Output';
+import './Form.css';
 
 export interface Props {
 
@@ -22,7 +23,7 @@ export default class Form extends React.Component<Props, State> {
 	render () {
 		const { password, passNT, passLM } = this.state;
 		return (
-			<form onSubmit={this.handleSubmit}>
+			<form className="Form" onSubmit={this.handleSubmit}>
 				<div>
 					<label>Password</label><br />
 					<input
