@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { calculatePassNT, calculatePassLM } from './ntlm';
+import Output from './Output';
 
 export interface Props {
 
@@ -34,10 +35,7 @@ export default class Form extends React.Component<Props, State> {
 
 				<br />
 
-				<div>
-					<pre><strong>PassNT</strong>          { passNT }</pre>
-					<pre><strong>PassLM</strong>          { passLM }</pre>
-				</div>
+				<Output passNT={passNT} passLM={passLM} />
 			</form>
 		);
 	}
