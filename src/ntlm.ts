@@ -2,6 +2,7 @@ import { encode } from 'iconv-lite';
 import { createCipheriv } from 'crypto';
 import { hex as md4 } from 'js-md4';
 
+// From https://medium.com/@petergombos/lm-ntlm-net-ntlmv2-oh-my-a9b235c58ed4
 const TO_ENCODE = 'KGS!@#$%';
 
 /**
