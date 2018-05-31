@@ -11,6 +11,8 @@ const TO_ENCODE = 'KGS!@#$%';
  * @param key Key buffer to write to
  * @param i Optional offset index for password buffer
  * @param j Optional offset index for key buffer
+ *
+ * @see https://blog.skullsecurity.org/2008/lanman-and-ntlm-not-as-complex-as-you-think
  */
 function passwordToKey (
 	password: Uint8Array,
