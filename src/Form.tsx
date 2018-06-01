@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { calculatePassNT, calculatePassLM } from './ntlm';
+import Input from './Input';
 import Output from './Output';
 import './Form.css';
 
@@ -24,19 +25,10 @@ export default class Form extends React.Component<Props, State> {
 		const { password, passNT, passLM } = this.state;
 		return (
 			<form className="Form" onSubmit={this.handleSubmit}>
-				<div>
-					<label htmlFor="Form-password">Password</label><br />
-					<input
-						id="Form-password"
-						type="password"
-						value={password}
-						onChange={this.handleChangePassword}
-						maxLength={14}
-					/>
-				</div>
-
-				<br />
-
+				<pre className="Form-comment"># Your Active Directory password</pre><br />
+				<Input password={password} onChangePassword={this.handleChangePassword} />
+				<br /><br />
+				<pre className="Form-comment"># Paste these lines into your Cntlm config</pre><br />
 				<Output passNT={passNT} passLM={passLM} />
 			</form>
 		);

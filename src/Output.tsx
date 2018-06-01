@@ -1,5 +1,4 @@
 import * as React from 'react';
-import './Output.css';
 
 export interface Props {
 	passNT: string;
