@@ -1,10 +1,6 @@
 .Form {
-	padding: 0.5em;
-	font-size: 2em;
 	color: #d4d4d4;
 	background-color: #1e1e1e;
-	border: 1px solid #3c3c3c;
-	border-radius: 0.125em;
 	padding: 0.5em;
 	cursor: text;
 }
@@ -15,4 +11,12 @@
 
 .Form-comment {
 	color: #608b4e;
+}
+
+@media (min-width: 1200px) {
+	.Form {
+		font-size: 2em;
+		border: 1px solid #3c3c3c;
+		border-radius: 0.125em;
+	}
 }

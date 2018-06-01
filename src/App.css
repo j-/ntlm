@@ -1,11 +1,15 @@
-.App {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	min-width: 100vw;
-	min-height: 100vh;
-}
-
 .App-form-container {
 	display: inline-block;
+}
+
+@media (min-width: 1200px) {
+
+	.App {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-width: 100vw;
+		min-height: 100vh;
+	}
+
 }
